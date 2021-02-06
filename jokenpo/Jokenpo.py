@@ -10,12 +10,12 @@ cabecalho('MENU PRINCIPAL')
 while True:
 	if resposta == 'N' or jogador == 3:
 		escolha = menu(['Ranking', 'Jogar', 'Sair'])
-		computador = randint(0, 2)
 		if escolha == 1:
 			cabecalho('JOKENPO')
 		if escolha == 2:
 			break
 	while True:
+		computador = randint(0, 2)
 		show('Qual você escolhe?')
 		jogador = menu(['Pedra', 'Papel', 'Tesoura', 'Menu'])
 		if str(jogador) in '0123':
